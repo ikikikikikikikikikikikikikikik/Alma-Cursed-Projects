@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alma Király Projektjei</title>
+  <style>
+    /* Reset alap */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #d4f1f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      text-shadow: 0 0 8px #74c0fc;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #74c0fc;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #a5d8ff;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1000px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .projekt-kartya {
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 0 15px #339af0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: default;
+    }
+
+    .projekt-kartya:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px #74c0fc;
+    }
+
+    .projekt-kartya h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #99ccff;
+      user-select: none;
+    }
+
+    .projekt-kartya p {
+      flex-grow: 1;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #cfe3fc;
+    }
+
+    .projekt-kartya button {
+      align-self: flex-start;
+      background-color: #339af0;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #e1f0ff;
+      cursor: pointer;
+      box-shadow: 0 0 12px #1c7ed6;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+
+    .projekt-kartya button:hover {
+      background-color: #74c0fc;
+      box-shadow: 0 0 20px #74c0fc;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #74c0fc;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.4rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .projekt-kartya {
+        padding: 18px;
+      }
+      .projekt-kartya h2 {
+        font-size: 1.4rem;
+      }
+      .projekt-kartya p {
+        font-size: 1rem;
+      }
+      .projekt-kartya button {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alma  Cursed Projects</h1>
+    <p>weird bizarre project collections</p>
+  </header>
+
+  <main>
+    <section class="projekt-kartya">
+      <h2>a cow that walk on his fucking tit</h2>
+      <p></p>
+      <button onclick="window.open('csocsen.html', '_blank')">click to wiew</button>
+    </section>
+
+    <section class="projekt-kartya">
+      <h2>???</h2>
+      <p>???</p>
+      <button onclick="window.open('nigger.html', '_blank')">click to wiew</button>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Alma Király — Minden jog fenntartva
+  </footer>
+</body>
+</html>
